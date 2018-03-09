@@ -1,0 +1,12 @@
+import numpy as np
+import pandas as pd
+import os
+import matplotlib as matplot
+from matplotlib import pyplot as plt
+
+path1 = os.getcwd()+'/train.csv'
+train = pd.read_csv(path1)
+path2 = os.getcwd()+'/test.csv'
+test = pd.read_csv(path2)
+describe = train.describe()
+print(describe)
